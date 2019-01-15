@@ -1,0 +1,59 @@
+/******************************************************************************
+
+    Filename:       ip2b_maxt_alexisb_madlibs.cpp
+    Description:    Write a program that inputs and outputs strings.
+    Author P2:      Max Taylor, Assisted by Alexis b
+    Date:           1/15/19
+*******************************************************************************/
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    //inputs to be made by user
+    string adj1;
+    string nationality;
+    string name;
+    string adj2;
+    string noun2;
+    int time1;
+    string adj3;
+    
+    
+    
+    //User input adlibs
+    cout << "Please enter a adjective: " << endl;
+    getline(cin, adj1);
+    
+    cout << "Please enter a nationality: " << endl;
+    getline(cin, nationality);
+    
+    cout << "Please enter a name: " << endl;
+    getline(cin, name);
+    
+    cout << "Please enter a adjective: " << endl;
+    getline(cin, adj2);
+    
+    cout << "Please enter a noun: " << endl;
+    getline(cin, noun2);
+    cin.sync();
+    
+    cout << "Please enter a adjective: " << endl;
+    getline(cin, adj3);
+    
+    cout << "Please enter a number: " << endl;
+    cin >> time1;
+    cin.sync();
+    
+    cout << endl << endl << endl;
+    
+    
+    cout << "Pizza was invented by a " << adj1 << " " << nationality << " chef named" << name << "." << endl;
+    cout << "To make a " << adj2 << " pizza, put lots and lots of " << noun2 << "." << endl;
+    cout << "Then, pop it in the oven for " << time1 << " hours, until it's perfectly " << adj3 << "." << endl;
+    
+    
+    return 0;
+}
